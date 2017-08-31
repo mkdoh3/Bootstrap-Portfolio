@@ -1,0 +1,69 @@
+/*html, body {
+  height: 100vh;
+}*/
+body {
+  background-image: url("../images/stardust.png");
+      background-repeat: repeat;
+      font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+      font-size: 18px;
+      color: #444;
+}
+
+h1, h2, h3 {
+  font-family: 'Georgia', Times, "Times New Roman", serif;
+
+}
+.navbar-light {
+  postion: relative;
+}
+
+.brand-wrapper {
+  position: absolute;
+  min-height: 100%;
+  background: gray;
+  
+}
+
+.navbar {
+  min-height: 4rem;
+  background: #f7f7f7;
+  border-bottom: 2px solid #777777;
+}
+
+.full-name {
+  font-size: 24px;
+  padding-left: 10px;
+  line-height: 10px;
+  font-weight: bold;
+  
+}
+
+.card-title {
+  font-size: 24px;
+  padding-bottom: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  border-bottom: 2px groove #cccccc;
+}
+
+
+
+
+
+
+
+@media (max-width: 575px) { ... }
+
+
+@media (min-width: 576px) and (max-width: 767px) { ... }
+
+@media screen and (max-width: 992px) {
+  #sidebar {
+    text-align: center;
+  }
+}
+ 
+
+@media (min-width: 992px) and (max-width: 1199px) { ... }
+
+@media (min-width: 1200px) { ... }
