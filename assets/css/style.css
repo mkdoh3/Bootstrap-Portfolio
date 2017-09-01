@@ -1,33 +1,29 @@
-/*html, body {
-  height: 100vh;
-}*/
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
   background-image: url("../images/stardust.png");
-      background-repeat: repeat;
-      font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-      font-size: 18px;
-      color: #444;
+  background-repeat: repeat;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 18px;
+  color: #444;
+}
+
+body {
+  margin-bottom: 60px;
 }
 
 h1, h2, h3 {
   font-family: 'Georgia', Times, "Times New Roman", serif;
 
 }
-.navbar-light {
-  postion: relative;
-}
-
-.brand-wrapper {
-  position: absolute;
-  min-height: 100%;
-  background: gray;
-  
-}
 
 .navbar {
   min-height: 4rem;
   background: #f7f7f7;
-  border-bottom: 2px solid #777777;
+  border-bottom: 2px solid #4aaaa5;
 }
 
 .full-name {
@@ -35,7 +31,6 @@ h1, h2, h3 {
   padding-left: 10px;
   line-height: 10px;
   font-weight: bold;
-  
 }
 
 .card-title {
@@ -43,27 +38,44 @@ h1, h2, h3 {
   padding-bottom: 20px;
   font-weight: bold;
   margin-bottom: 20px;
-  border-bottom: 2px groove #cccccc;
+  border-bottom: 2px groove #4aaaa5;
+}
+.card {
+  background-color: #f7f7f7;
 }
 
+label {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
 
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px; 
+  background-color: #f7f7f7;
+  border-top: 4px solid #4aaaa5;
+  text-align: center;
+}
 
+#img-slide {
+  border-radius: 1%;
+}
 
+#img-slide{
+  background-color: rgba(0, 0, 0, 0.6);
+}
 
-
-
-@media (max-width: 575px) { ... }
-
-
-@media (min-width: 576px) and (max-width: 767px) { ... }
+@media screen and (max-width: 357px) {
+  .full-name {
+    font-size: 20px;
+  }
+}
 
 @media screen and (max-width: 992px) {
   #sidebar {
     text-align: center;
   }
 }
- 
-
-@media (min-width: 992px) and (max-width: 1199px) { ... }
-
-@media (min-width: 1200px) { ... }

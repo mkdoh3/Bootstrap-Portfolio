@@ -2,72 +2,96 @@
 <html lang="en-us">
 
 <head>
+
   <meta charset="UTF-8">
-  <title>Contact | Your Name</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Michael Doherty</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 </head>
 
-<body>
 
-  <header id="masthead">
-    <div class="container">
-      <a href="index.html" id="logo">Your Name</a>
-      <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
+<body> 
 
-
-<div class="wrapper">
-
-  <div id="main-container" class="container">
-    <section class="main-section">
-      <h1>Contact</h1>
-
-      <form id="contact-form">
-        <ul>
-          <li>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
-          </li>
-          <li>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
-          </li>
-          <li>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required="required"></textarea>
-          </li>
-        </ul>
-        <input type="submit">
-      </form>
-
-    </section>
-
-    <section class="sidebar">
-      <div id="connect">
-        <h2>Connect with Me</h2>
-
-        <a href="#"><img src="assets/images/github-128.png" class="social" alt="GitHub" /></a>
-        <a href="#"><img src="assets/images/linkedin-128.png" class="social" alt="LinkedIn" /></a>
-        <a href="#"><img src="assets/images/stackoverflow-128.png" class="social" alt="Stack Overflow" /></a>
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="navbar sticky-top navbar-expand-sm navbar-light bg-light col-lg-12">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/images/ds.png" width="30" height="30" class="d-inline-block align-top" alt=""><span class="full-name">Michael Doherty</span></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
-    </section>
 
-     <div class="push"></div>
-    </div>
-  </div>
+      <!-- end navigation and header -->
+
+      <div class="container">
+        <div class="row">
+          <form class = "col-lg-6 col-md-12 col-sm-12 col-xs-12 mt-5 p-3" style="background-color:#f7f7f7; border-radius: 1%">
+            <div class="form-group">
+              <label for="email-input">Email</label>
+              <input type="email" class="form-control" id="email-input" placeholder="name@example.com">
+            </div>
+            <div class="form-group">
+              <label for="name-input">Name</label>
+              <input type="text" class="form-control" id="name-input" placeholder="Name">
+            </div>
+            <div class="form-group">
+              <label for="text-input">Say something..</label>
+              <textarea class="form-control" id="text-input" rows="6"></textarea>
+            </div>
+          </form>
 
 
-  <footer>
+          <div class="col-lg-2"></div>
+          <div class="card col-lg-4 col-md-12 col-sm-12 col-xs-12 mt-5" id="sidebar" style="max-height: 200px;" >
+
+            <div class="card-body container" >
+              <h3 class="card-title">Connect With Me</h3>
+              <div class="container">
+                <div class="row">
+                  <div class="card-block  col-4 ">
+                    <a href="https://github.com/mkdoh3" target="_blank"><img id="git" src="assets/images/git.png" alt="git"></a>
+                  </div>
+                  <div class="card-block  col-4 ">
+                    <a href="https://www.linkedin.com/in/michaeldoh" target="_blank"><img src="assets/images/linked.png" alt="linked"></a>
+                  </div>
+                  <div class="card-block  col-4 ">
+                   <a href="https://stackoverflow.com/users/8286708/mike-doherty" target="_blank"><img src="assets/images/stack.png" alt="stackoverflow"></a>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+         <div class="col-lg-1 col-md-1">
+         </div>
+       </div>
+     </div>   
+   </div>
+<footer class=" footer bg-dark text-white mt-4">
     <div class="container">
-      Copyright &copy; 2016 Your Name
+      <span class="text-muted">© 2017 Michael Doherty</span>
     </div>
   </footer>
-</body>
 
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+</body>
 </html>
