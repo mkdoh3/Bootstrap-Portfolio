@@ -12,7 +12,7 @@ body {
 }
 
 body {
-  margin-bottom: 60px;
+  margin-bottom: 90px;
 }
 
 h1, h2, h3 {
@@ -59,6 +59,21 @@ label {
   border-top: 4px solid #4aaaa5;
   text-align: center;
 }
+
+
+.carousel-inner {
+    border-radius: 1%;
+    background-color: rgba(0,0,0,0);
+    overflow: hidden;
+}
+
+.carousel-control-prev {
+  left: -7px;
+}
+.carousel-control-next {
+  right: -7px;
+}
+
 
 #img-slide {
   border-radius: 1%;
