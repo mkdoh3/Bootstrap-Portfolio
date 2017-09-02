@@ -83,9 +83,21 @@ label {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-@media screen and (max-width: 357px) {
+#profile-img {
+  float: left;
+  border-radius: 8%;
+}
+
+@media screen and (max-width: 376px) {
   .full-name {
     font-size: 20px;
+  }
+  #profile-img {
+    float: none;
+    transform: scale(1.1);
+  }
+  #about-me {
+    text-align: center;
   }
 }
 
